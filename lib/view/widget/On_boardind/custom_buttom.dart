@@ -1,6 +1,8 @@
+import 'package:ecommers_app/controller/on_boarding_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class CustomButtom extends StatelessWidget {
+class CustomButtom extends GetView<OnboardingControllerImplement> {
   const CustomButtom({
     super.key,
   });
@@ -13,7 +15,9 @@ class CustomButtom extends StatelessWidget {
       child: MaterialButton(
         padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
         color: Colors.green,
-        onPressed: () {},
+        onPressed: () {
+          controller.nex();
+        },
         child: const Text(
           'Containue',
           style: TextStyle(color: Colors.white, fontSize: 22),

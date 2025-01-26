@@ -1,3 +1,4 @@
+import 'package:ecommers_app/core/constant/app_Routs/routs.dart';
 import 'package:ecommers_app/view/screen/on_boarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,6 +20,7 @@ class EcommerseApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const OnBoarding(),
+      routes: routes,
     );
   }
 }

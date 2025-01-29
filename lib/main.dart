@@ -1,9 +1,14 @@
+import 'package:ecommers_app/Services/my_services.dart';
 import 'package:ecommers_app/core/constant/app_Routs/routs.dart';
+import 'package:ecommers_app/core/localization/tranzilation.dart';
+import 'package:ecommers_app/view/screen/language.dart';
 import 'package:ecommers_app/view/screen/on_boarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await intialServse();
   runApp(const EcommerseApp());
 }
 
@@ -13,13 +18,9 @@ class EcommerseApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      translations: Tranzilation(),
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const OnBoarding(),
+      home: const Language(),
       routes: routes,
     );
   }

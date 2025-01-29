@@ -1,5 +1,6 @@
 import 'package:ecommers_app/Services/my_services.dart';
 import 'package:ecommers_app/core/constant/app_Routs/routs.dart';
+import 'package:ecommers_app/core/localization/change_locle.dart';
 import 'package:ecommers_app/core/localization/tranzilation.dart';
 import 'package:ecommers_app/view/screen/language.dart';
 import 'package:ecommers_app/view/screen/on_boarding.dart';
@@ -17,7 +18,9 @@ class EcommerseApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ChangeLocle controller = Get.put(ChangeLocle());
     return GetMaterialApp(
+      locale: controller.language,
       translations: Tranzilation(),
       debugShowCheckedModeBanner: false,
       home: const Language(),

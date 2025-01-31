@@ -94,9 +94,9 @@ flutter:
         - asset: assets/fonts/Cairo-Bold.ttf
         - asset: assets/fonts/Cairo-Regular.ttf
   #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
+    - family: Pochaevsk 
+      fonts:
+        - asset: assets/fonts/Pochaevsk-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

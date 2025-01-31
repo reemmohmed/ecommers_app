@@ -1,7 +1,10 @@
+import 'package:ecommers_app/core/constant/app_Routs/name_routs.dart';
+import 'package:ecommers_app/core/localization/change_locle.dart';
 import 'package:ecommers_app/view/widget/Language/custom_button_lange.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class LanguageBody extends StatelessWidget {
+class LanguageBody extends GetView<ChangeLocle> {
   const LanguageBody({super.key});
 
   @override
@@ -11,20 +14,26 @@ class LanguageBody extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text(
-            'Choose Your Language',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          Text(
+            '1'.tr,
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           const SizedBox(
             height: 10,
           ),
           CustomButtonLange(
             textButton: 'ar',
-            onPressed: () {},
+            onPressed: () {
+              controller.chaneLange('ar');
+              Get.toNamed(NameRouts.onboarding);
+            },
           ),
           CustomButtonLange(
             textButton: 'en',
-            onPressed: () {},
+            onPressed: () {
+              controller.chaneLange('en');
+              Get.toNamed(NameRouts.onboarding);
+            },
           ),
         ],
       ),

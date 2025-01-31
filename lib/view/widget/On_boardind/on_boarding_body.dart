@@ -1,4 +1,4 @@
-import 'package:ecommers_app/controller/on_boarding_controller.dart';
+import 'package:ecommers_app/controller/onboarding/on_boarding_controller.dart';
 import 'package:ecommers_app/view/widget/On_boardind/custom_buttom.dart';
 import 'package:ecommers_app/view/widget/On_boardind/custom_page_view.dart';
 import 'package:ecommers_app/view/widget/On_boardind/dot_controller.dart';

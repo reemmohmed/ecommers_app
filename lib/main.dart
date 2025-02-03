@@ -1,9 +1,10 @@
 import 'package:ecommers_app/Services/my_services.dart';
+import 'package:ecommers_app/Test/test.dart';
 import 'package:ecommers_app/core/constant/app_Routs/routs.dart';
 import 'package:ecommers_app/core/localization/change_locle.dart';
 import 'package:ecommers_app/core/localization/tranzilation.dart';
 import 'package:ecommers_app/view/screen/language.dart';
-import 'package:ecommers_app/view/screen/on_boarding.dart';
+import 'package:ecommers_app/view/screen/On_bording/on_boarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -23,7 +24,9 @@ class EcommerseApp extends StatelessWidget {
       locale: controller.language,
       translations: Tranzilation(),
       debugShowCheckedModeBanner: false,
-      home: const Language(),
+      home:
+          // const Test(),
+          const Language(),
       routes: routes,
     );
   }

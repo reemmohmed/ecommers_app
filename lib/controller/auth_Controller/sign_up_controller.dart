@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 abstract class SignUpController extends GetxController {
   signUp();
   goToSignIn();
-  goToforgetPassword();
 }
 
 class SignUpControllerImple extends SignUpController {
@@ -42,10 +41,5 @@ class SignUpControllerImple extends SignUpController {
     phone.dispose();
     paswored.dispose();
     super.dispose();
-  }
-
-  @override
-  goToforgetPassword() {
-    Get.offNamed(NameRouts.forgetpasswored);
   }
 }

@@ -2,30 +2,24 @@ import 'package:ecommers_app/core/constant/app_Routs/name_routs.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-abstract class LoginControllers extends GetxController {
-  logen();
-  goToForgetPassword();
-  gotoSignUp();
+abstract class ForgetPasswordController extends GetxController {
+  cheekemail();
+
+  goToViryfiycode();
 }
 
-class LogenControllerImpl extends LoginControllers {
+class SignUpControllerImple extends ForgetPasswordController {
   late TextEditingController email;
-  late TextEditingController password;
 
   @override
-  gotoSignUp() {
-    Get.toNamed(NameRouts.signUp);
-  }
-
-  @override
-  logen() {
+  cheekemail() {
+    // TODO: implement signUp
     throw UnimplementedError();
   }
 
   @override
   void onInit() {
     email = TextEditingController();
-    password = TextEditingController();
 
     super.onInit();
   }
@@ -33,12 +27,12 @@ class LogenControllerImpl extends LoginControllers {
   @override
   void dispose() {
     email.dispose();
-    password.dispose();
+
     super.dispose();
   }
 
   @override
-  goToForgetPassword() {
-    Get.offNamed(NameRouts.forgetpasswored);
+  goToViryfiycode() {
+    Get.offNamed(NameRouts.viryFiyCode);
   }
 }

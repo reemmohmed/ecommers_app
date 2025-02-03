@@ -47,6 +47,20 @@ class LogenBody extends StatelessWidget {
               hintText: 'Enter Your Password',
               icon: Icons.lock_clock_outlined),
           const SizedBox(
+            height: 5,
+          ),
+          GestureDetector(
+            onTap: () {
+              // controller.goToforgetPassword();
+            },
+            child: Text(
+              'Forget Password ?',
+              textAlign: TextAlign.end,
+              style: Styels.styel18
+                  .copyWith(color: Colors.red, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const SizedBox(
             height: 10,
           ),
           CustomButtonAuth(

@@ -1,3 +1,4 @@
+import 'package:ecommers_app/controller/auth_Controller/cheek_email_controller.dart';
 import 'package:ecommers_app/controller/auth_Controller/sign_up_controller.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_button_auth.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_text_body.dart';
@@ -6,12 +7,12 @@ import 'package:ecommers_app/view/widget/custom_hint_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ForgetpasswordBody extends StatelessWidget {
-  const ForgetpasswordBody({super.key});
+class CheekEmailBody extends StatelessWidget {
+  const CheekEmailBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    SignUpControllerImple controller = Get.put(SignUpControllerImple());
+    CheekEmailControllerImple controller = Get.put(CheekEmailControllerImple());
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
       child: ListView(
@@ -35,11 +36,11 @@ class ForgetpasswordBody extends StatelessWidget {
               textlabel: 'Email',
               hintText: 'Enter Your Email',
               icon: Icons.email_outlined),
-          CustomTextForm(
-              controller: controller.phone,
-              textlabel: 'phone',
-              hintText: 'Enter Your phone Number',
-              icon: Icons.phone_android_rounded),
+          // CustomTextForm(
+          //     controller: controller.phone,
+          //     textlabel: 'phone',
+          //     hintText: 'Enter Your phone Number',
+          //     icon: Icons.phone_android_rounded),
 
           // GestureDetector(
           //   onTap: () {
@@ -59,7 +60,7 @@ class ForgetpasswordBody extends StatelessWidget {
             text: 'cheek ',
             color: Colors.blue,
             onPressed: () {
-              controller.goToSignIn();
+              controller.goToSuccessSignUp();
             },
           ),
           const SizedBox(

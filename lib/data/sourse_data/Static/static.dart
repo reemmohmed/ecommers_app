@@ -1,6 +1,6 @@
 import 'package:ecommers_app/core/constant/asset.dart';
 import 'package:ecommers_app/data/models/on_bording_model.dart';
-import 'package:ecommers_app/view/screen/on_boarding.dart';
+import 'package:ecommers_app/view/screen/On_bording/on_boarding.dart';
 
 abstract class Static {
   static List<OnbordingModel> onboardingList = [

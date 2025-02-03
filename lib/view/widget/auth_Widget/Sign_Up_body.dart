@@ -53,7 +53,7 @@ class SignUpBody extends StatelessWidget {
               icon: Icons.lock_clock_outlined),
           GestureDetector(
             onTap: () {
-              controller.goToforgetPassword();
+              controller.goToSignIn();
             },
             child: Text(
               'Forget Password ?',
@@ -83,6 +83,5 @@ class SignUpBody extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }

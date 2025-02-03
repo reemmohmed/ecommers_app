@@ -8,8 +8,9 @@ abstract class ForgetPasswordController extends GetxController {
   goToViryfiycode();
 }
 
-class SignUpControllerImple extends ForgetPasswordController {
+class ForgetPaswordImple extends ForgetPasswordController {
   late TextEditingController email;
+  late TextEditingController phone;
 
   @override
   cheekemail() {
@@ -20,6 +21,7 @@ class SignUpControllerImple extends ForgetPasswordController {
   @override
   void onInit() {
     email = TextEditingController();
+    phone = TextEditingController();
 
     super.onInit();
   }
@@ -27,6 +29,7 @@ class SignUpControllerImple extends ForgetPasswordController {
   @override
   void dispose() {
     email.dispose();
+    phone.dispose();
 
     super.dispose();
   }

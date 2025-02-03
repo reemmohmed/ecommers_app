@@ -1,3 +1,4 @@
+import 'package:ecommers_app/controller/auth_Controller/forget_password_controller.dart';
 import 'package:ecommers_app/controller/auth_Controller/sign_up_controller.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_button_auth.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_text_body.dart';
@@ -11,7 +12,7 @@ class ForgetpasswordBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SignUpControllerImple controller = Get.put(SignUpControllerImple());
+    ForgetPaswordImple controller = Get.put(ForgetPaswordImple());
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
       child: ListView(
@@ -59,7 +60,7 @@ class ForgetpasswordBody extends StatelessWidget {
             text: 'cheek ',
             color: Colors.blue,
             onPressed: () {
-              controller.goToSignIn();
+              controller.goToViryfiycode();
             },
           ),
           const SizedBox(

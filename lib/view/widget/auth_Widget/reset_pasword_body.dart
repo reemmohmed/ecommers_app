@@ -15,9 +15,13 @@ class ResetPaswordBody extends StatelessWidget {
   Widget build(BuildContext context) {
     ResetPaswordImple controller = Get.put(ResetPaswordImple());
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
       child: ListView(
         children: [
+          Text(
+            'Reset Password',
+            style: Styels.styel18.copyWith(),
+          ),
           Align(
             alignment: Alignment.center,
             child: Text(

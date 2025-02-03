@@ -12,7 +12,7 @@ class ResetPaswordImple extends ResetPasswordController {
   late TextEditingController repaswored;
   @override
   goToSuccessResetpPassword() {
-    Get.offNamed(NameRouts.viryFiyCode);
+    Get.offNamed(NameRouts.succesResetPasword);
   }
 
   @override

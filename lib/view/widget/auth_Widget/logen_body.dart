@@ -51,7 +51,7 @@ class LogenBody extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () {
-              // controller.goToforgetPassword();
+              controller.goToForgetPassword();
             },
             child: Text(
               'Forget Password ?',

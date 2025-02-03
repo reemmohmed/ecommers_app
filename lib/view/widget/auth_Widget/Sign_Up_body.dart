@@ -51,17 +51,18 @@ class SignUpBody extends StatelessWidget {
               textlabel: '  Password',
               hintText: 'Enter Your Password',
               icon: Icons.lock_clock_outlined),
-          GestureDetector(
-            onTap: () {
-              controller.goToSignIn();
-            },
-            child: Text(
-              'Forget Password ?',
-              textAlign: TextAlign.end,
-              style: Styels.styel18
-                  .copyWith(color: Colors.red, fontWeight: FontWeight.bold),
-            ),
-          ),
+          // GestureDetector(
+          //   onTap: () {
+          //     controller.goToSignIn();
+          //   },
+          //   child: Text(
+          //     'Forget Password ?',
+          //     textAlign: TextAlign.end,
+          //     style: Styels.styel18
+          //         .copyWith(color: Colors.red, fontWeight: FontWeight.bold),
+          //   ),
+          // ),
+
           const SizedBox(
             height: 5,
           ),

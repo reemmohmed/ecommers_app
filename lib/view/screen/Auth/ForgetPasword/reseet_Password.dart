@@ -6,10 +6,7 @@ class ReseetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Reset Password'),
-      ),
+    return const Scaffold(
       body: const ResetPaswordBody(),
     );
   }

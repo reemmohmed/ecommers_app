@@ -1,9 +1,6 @@
 import 'package:ecommers_app/controller/auth_Controller/reset_password_controller.dart';
 import 'package:ecommers_app/core/Text_Styel.dart/styel.dart';
-import 'package:ecommers_app/view/widget/On_boardind/custom_buttom.dart';
-import 'package:ecommers_app/view/widget/auth_Widget/Custom_text_auth.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_button_auth.dart';
-import 'package:ecommers_app/view/widget/auth_Widget/custom_text_body.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_text_form.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

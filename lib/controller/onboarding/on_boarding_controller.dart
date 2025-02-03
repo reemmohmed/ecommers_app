@@ -22,7 +22,7 @@ class OnboardingControllerImplement extends OnBoardingController {
     } else {
       currentpage++;
       pageController.animateToPage(currentpage,
-          duration: const Duration(microseconds: 200), curve: Curves.easeInOut);
+          duration: const Duration(microseconds: 100), curve: Curves.easeInOut);
     }
   }
 

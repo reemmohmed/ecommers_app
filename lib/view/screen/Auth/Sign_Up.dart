@@ -10,6 +10,7 @@ class SignUp extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
+        elevation: 0,
         title: const Text(
           'Sign Up',
           style: TextStyle(fontWeight: FontWeight.bold),

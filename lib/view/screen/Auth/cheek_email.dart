@@ -1,5 +1,4 @@
 import 'package:ecommers_app/view/widget/auth_Widget/cheek_email_body.dart';
-import 'package:ecommers_app/view/widget/auth_Widget/forgetpassword_body.dart';
 import 'package:flutter/material.dart';
 
 class CheekEmail extends StatelessWidget {
@@ -7,8 +6,14 @@ class CheekEmail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: const CheekEmailBody(),
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+        title: Text('Sucsess SignUP'),
+      ),
+      body: CheekEmailBody(),
     );
   }
 }

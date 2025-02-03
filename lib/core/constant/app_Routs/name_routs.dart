@@ -7,6 +7,7 @@ class NameRouts {
   static const String reseetPassword = '/ReseetPassword';
   static const String succesResetPasword = '/succesResetPasword';
   static const String succsesSignUp = '/SuccsesSignUp';
+  static const String cheekEmail = '/CheekEmail';
 
   //Onboarding
   static const String onboarding = '/OnBoarding';

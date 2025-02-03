@@ -1,5 +1,4 @@
 import 'package:ecommers_app/controller/auth_Controller/cheek_email_controller.dart';
-import 'package:ecommers_app/controller/auth_Controller/sign_up_controller.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_button_auth.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_text_body.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_text_form.dart';
@@ -17,6 +16,9 @@ class CheekEmailBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
       child: ListView(
         children: [
+          SizedBox(
+            height: 30,
+          ),
           const CustomHintText(
             text: ' Cheek Your Email',
           ),

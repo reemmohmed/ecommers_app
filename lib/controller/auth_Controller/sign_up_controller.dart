@@ -20,8 +20,7 @@ class SignUpControllerImple extends SignUpController {
 
   @override
   signUp() {
-    // TODO: implement signUp
-    throw UnimplementedError();
+    Get.offNamed(NameRouts.cheekEmail);
   }
 
   @override

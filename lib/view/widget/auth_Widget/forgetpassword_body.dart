@@ -1,5 +1,4 @@
 import 'package:ecommers_app/controller/auth_Controller/forget_password_controller.dart';
-import 'package:ecommers_app/controller/auth_Controller/sign_up_controller.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_button_auth.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_text_body.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_text_form.dart';

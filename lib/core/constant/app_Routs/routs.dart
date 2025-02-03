@@ -1,6 +1,7 @@
 import 'package:ecommers_app/core/constant/app_Routs/name_routs.dart';
 import 'package:ecommers_app/view/screen/Auth/Sign_Up.dart';
 import 'package:ecommers_app/view/screen/Auth/ForgetPasword/foreget_password.dart';
+import 'package:ecommers_app/view/screen/Auth/cheek_email.dart';
 import 'package:ecommers_app/view/screen/Auth/login.dart';
 import 'package:ecommers_app/view/screen/Auth/ForgetPasword/reseet_Password.dart';
 import 'package:ecommers_app/view/screen/Auth/succses_sign_Up.dart';
@@ -18,6 +19,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   NameRouts.reseetPassword: (context) => const ReseetPassword(),
   NameRouts.succesResetPasword: (context) => const SucsesResetPasword(),
   NameRouts.succsesSignUp: (context) => const SuccsesSignUp(),
+  NameRouts.cheekEmail: (context) => const CheekEmail(),
 
 // Onbording
   NameRouts.onboarding: (context) => const OnBoarding(),

@@ -15,6 +15,9 @@ class CustomPageView extends GetView<OnboardingControllerImplement> {
       onPageChanged: (value) {
         controller.onPageChange(value);
       },
+
+      itemCount: Static.onboardingList.length, // ✅ يحدد عدد العناصر بشكل صحيح
+
       itemBuilder: (context, index) => Column(
         children: [
           const SizedBox(

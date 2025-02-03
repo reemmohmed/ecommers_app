@@ -1,5 +1,4 @@
 import 'package:ecommers_app/controller/auth_Controller/sign_up_controller.dart';
-import 'package:ecommers_app/core/Text_Styel.dart/styel.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/Custom_text_auth.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_button_auth.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_text_body.dart';
@@ -69,7 +68,9 @@ class SignUpBody extends StatelessWidget {
           CustomButtonAuth(
             text: 'Sign In',
             color: Colors.blue,
-            onPressed: () {},
+            onPressed: () {
+              controller.signUp();
+            },
           ),
           const SizedBox(
             height: 10,

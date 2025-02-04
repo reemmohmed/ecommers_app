@@ -18,8 +18,8 @@ class CustomButtom extends GetView<OnboardingControllerImplement> {
         onPressed: () {
           controller.nex();
         },
-        child: const Text(
-          'Containue',
+        child: Text(
+          '10'.tr,
           style: TextStyle(color: Colors.white, fontSize: 22),
         ),
       ),

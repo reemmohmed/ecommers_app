@@ -23,15 +23,14 @@ class LogenBody extends StatelessWidget {
             Asset.logo,
             height: 200,
           ),
-          const CustomHintText(
-            text: 'Welcome Back',
+          CustomHintText(
+            text: '11'.tr,
           ),
           const SizedBox(
             height: 10,
           ),
-          const CustomTextBody(
-            text:
-                'Signe In With Your Email And Password Or Continue With Social Media ',
+          CustomTextBody(
+            text: '12'.tr,
           ),
           const SizedBox(
             height: 69,
@@ -39,12 +38,12 @@ class LogenBody extends StatelessWidget {
           CustomTextForm(
               controller: controller.email,
               textlabel: 'Email',
-              hintText: 'Enter Your Email',
+              hintText: '13'.tr,
               icon: Icons.email_outlined),
           CustomTextForm(
               controller: controller.password,
               textlabel: '  Password',
-              hintText: 'Enter Your Password',
+              hintText: '14'.tr,
               icon: Icons.lock_clock_outlined),
           const SizedBox(
             height: 5,
@@ -54,7 +53,7 @@ class LogenBody extends StatelessWidget {
               controller.goToForgetPassword();
             },
             child: Text(
-              'Forget Password ?',
+              '15'.tr,
               textAlign: TextAlign.end,
               style: Styels.styel18
                   .copyWith(color: Colors.red, fontWeight: FontWeight.bold),
@@ -64,7 +63,7 @@ class LogenBody extends StatelessWidget {
             height: 10,
           ),
           CustomButtonAuth(
-            text: 'Sign In',
+            text: '16'.tr,
             color: Colors.blue,
             onPressed: () {},
           ),
@@ -72,11 +71,11 @@ class LogenBody extends StatelessWidget {
             height: 10,
           ),
           CustomTextAuth(
-            text: 'Sign Up',
+            text: '18'.tr,
             onPressed: () {
               controller.gotoSignUp();
             },
-            acountText: " Don't have an account ? ",
+            acountText: "17".tr,
           ),
         ],
       ),

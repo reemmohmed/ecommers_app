@@ -7,6 +7,7 @@ import 'package:ecommers_app/view/screen/Auth/ForgetPasword/reseet_Password.dart
 import 'package:ecommers_app/view/screen/Auth/succses_sign_Up.dart';
 import 'package:ecommers_app/view/screen/Auth/ForgetPasword/sucses_reset_pasword.dart';
 import 'package:ecommers_app/view/screen/Auth/ForgetPasword/viry_fiy_code.dart';
+import 'package:ecommers_app/view/screen/Auth/veryfiy_code_signup.dart';
 import 'package:ecommers_app/view/screen/On_bording/on_boarding.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   NameRouts.succesResetPasword: (context) => const SucsesResetPasword(),
   NameRouts.succsesSignUp: (context) => const SuccsesSignUp(),
   NameRouts.cheekEmail: (context) => const CheekEmail(),
+  NameRouts.veryfiycodesignup: (context) => const VeryfiyCodeSignup(),
 
 // Onbording
   NameRouts.onboarding: (context) => const OnBoarding(),

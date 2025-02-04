@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 
 abstract class CheekEmailController extends GetxController {
   checkemail();
-  goToSuccessSignUp();
+  goToveryfiycodesignUp();
 }
 
 class CheekEmailControllerImple extends CheekEmailController {
@@ -14,8 +14,9 @@ class CheekEmailControllerImple extends CheekEmailController {
   checkemail() {}
 
   @override
-  goToSuccessSignUp() {
-    Get.offNamed(NameRouts.succsesSignUp);
+  goToveryfiycodesignUp() {
+    Get.offNamed(NameRouts.veryfiycodesignup);
+    // Get.offNamed(NameRouts.succsesSignUp);
   }
 
   @override

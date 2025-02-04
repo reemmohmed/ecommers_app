@@ -30,7 +30,9 @@ class CustomPageView extends GetView<OnboardingControllerImplement> {
           const SizedBox(
             height: 70,
           ),
-          Image.asset(Static.onboardingList[index].image),
+          AspectRatio(
+              aspectRatio: 2,
+              child: Image.asset(Static.onboardingList[index].image)),
           const SizedBox(
             height: 70,
           ),

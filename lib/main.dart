@@ -21,6 +21,7 @@ class EcommerseApp extends StatelessWidget {
   Widget build(BuildContext context) {
     ChangeLocle controller = Get.put(ChangeLocle());
     return GetMaterialApp(
+      theme: controller.appthem,
       locale: controller.language,
       translations: Tranzilation(),
       debugShowCheckedModeBanner: false,

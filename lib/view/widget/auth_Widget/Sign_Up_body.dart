@@ -17,38 +17,37 @@ class SignUpBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
       child: ListView(
         children: [
-          const CustomHintText(
-            text: 'Welcome Back',
+          CustomHintText(
+            text: '11'.tr,
           ),
           const SizedBox(
             height: 10,
           ),
-          const CustomTextBody(
-            text:
-                'Signe Up With Your Email And Password Or Continue With Social Media ',
+          CustomTextBody(
+            text: '25'.tr,
           ),
           const SizedBox(
             height: 69,
           ),
           CustomTextForm(
               controller: controller.userName,
-              textlabel: 'User Name',
-              hintText: 'Enter Your Name',
+              textlabel: '21'.tr,
+              hintText: '21'.tr,
               icon: Icons.person_3_rounded),
           CustomTextForm(
               controller: controller.email,
-              textlabel: 'Email',
-              hintText: 'Enter Your Email',
+              textlabel: '19'.tr,
+              hintText: '19'.tr,
               icon: Icons.email_outlined),
           CustomTextForm(
               controller: controller.phone,
-              textlabel: 'phone',
-              hintText: 'Enter Your phone Number',
+              textlabel: '22'.tr,
+              hintText: '23'.tr,
               icon: Icons.phone_android_rounded),
           CustomTextForm(
               controller: controller.paswored,
-              textlabel: '  Password',
-              hintText: 'Enter Your Password',
+              textlabel: '20'.tr,
+              hintText: '20'.tr,
               icon: Icons.lock_clock_outlined),
           // GestureDetector(
           //   onTap: () {

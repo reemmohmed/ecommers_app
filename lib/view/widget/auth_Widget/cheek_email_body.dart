@@ -19,8 +19,8 @@ class CheekEmailBody extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
-          const CustomHintText(
-            text: ' Cheek Your Email',
+          CustomHintText(
+            text: 'Cheek Email ',
           ),
           const SizedBox(
             height: 10,
@@ -62,7 +62,7 @@ class CheekEmailBody extends StatelessWidget {
             text: 'cheek ',
             color: Colors.blue,
             onPressed: () {
-              controller.goToSuccessSignUp();
+              controller.goToveryfiycodesignUp();
             },
           ),
           const SizedBox(

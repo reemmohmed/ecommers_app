@@ -1,30 +1,16 @@
 import 'package:ecommers_app/core/constant/asset.dart';
 import 'package:ecommers_app/data/models/on_bording_model.dart';
-import 'package:ecommers_app/view/screen/On_bording/on_boarding.dart';
+import 'package:get/get.dart';
 
 abstract class Static {
   static List<OnbordingModel> onboardingList = [
+    OnbordingModel(title: '2'.tr, image: Asset.onboardingOne, body: '3'.tr),
+    OnbordingModel(title: '4'.tr, image: Asset.onboardingTwo, body: '5'.tr),
     OnbordingModel(
-      title: 'Shoose Product',
-      image: Asset.onboardingOne,
-      body:
-          'Discover a world of convenience and endless choices\n  Get ready to experience the best of online shopping right\n at your fingertips ',
+      title: '6'.tr,
+      image: Asset.onboardingThree,
+      body: '7'.tr,
     ),
-    OnbordingModel(
-      title: 'Eyse Safe& Payment',
-      image: Asset.onboardingTwo,
-      body:
-          'Discover a world of convenience and endless choices \n Get ready to experience the best of online shopping right \nat your fingertips ',
-    ),
-    OnbordingModel(
-        title: 'Track Your Order',
-        image: Asset.onboardingThree,
-        body:
-            'Discover a world of convenience and endless choices \n Get ready to experience the best of online shopping right \nat your fingertips '),
-    OnbordingModel(
-        title: ' Fast Delivery',
-        image: Asset.onboardingFour,
-        body:
-            'Discover a world of convenience and endless choices \n Get ready to experience the best of online shopping right \nat your fingertips '),
+    OnbordingModel(title: '8'.tr, image: Asset.onboardingFour, body: '9'.tr),
   ];
 }

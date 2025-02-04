@@ -34,6 +34,7 @@ class CheekEmailBody extends StatelessWidget {
           ),
 
           CustomTextForm(
+              validator: (value) {},
               controller: controller.email,
               textlabel: 'Email',
               hintText: 'Enter Your Email',

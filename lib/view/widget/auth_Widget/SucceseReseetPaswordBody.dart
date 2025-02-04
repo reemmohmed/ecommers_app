@@ -1,11 +1,15 @@
+import 'package:ecommers_app/controller/auth_Controller/sucsessresetpawsword_contoller.dart';
 import 'package:ecommers_app/view/widget/auth_Widget/custom_button_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SucceseReseetPaswordBody extends StatelessWidget {
   const SucceseReseetPaswordBody({super.key});
 
   @override
   Widget build(BuildContext context) {
+    SucsessresetpawswordContollerImple controller =
+        Get.put(SucsessresetpawswordContollerImple());
     return Container(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -26,7 +30,11 @@ class SucceseReseetPaswordBody extends StatelessWidget {
           Container(
             width: double.infinity,
             child: CustomButtonAuth(
-                text: 'Go To Login', color: Colors.cyan, onPressed: () {}),
+                text: 'Go To Login',
+                color: Colors.cyan,
+                onPressed: () {
+                  controller.goToLongin();
+                }),
           ),
           const SizedBox(
             height: 20,

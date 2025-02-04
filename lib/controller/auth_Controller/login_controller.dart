@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:ecommers_app/core/constant/app_Routs/name_routs.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -12,6 +14,8 @@ class LogenControllerImpl extends LoginControllers {
   late TextEditingController email;
   late TextEditingController password;
 
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
   @override
   gotoSignUp() {
     Get.toNamed(NameRouts.signUp);
@@ -19,7 +23,12 @@ class LogenControllerImpl extends LoginControllers {
 
   @override
   logen() {
-    throw UnimplementedError();
+    var data = formKey.currentState;
+    if (data!.validate()) {
+      log(' valed');
+    } else {
+      log('not  valed');
+    }
   }
 
   @override

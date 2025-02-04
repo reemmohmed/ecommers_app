@@ -12,6 +12,7 @@ class SignUpControllerImple extends SignUpController {
   late TextEditingController email;
   late TextEditingController phone;
   late TextEditingController paswored;
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   @override
   goToSignIn() {
@@ -20,7 +21,13 @@ class SignUpControllerImple extends SignUpController {
 
   @override
   signUp() {
-    Get.offNamed(NameRouts.cheekEmail);
+    var data = formKey.currentState;
+    if (data!.validate()) {
+      return 'success';
+    } else {
+      return 'failers';
+    }
+    // Get.offNamed(NameRouts.cheekEmail);
   }
 
   @override

@@ -4,6 +4,7 @@ class CustomTextForm extends StatelessWidget {
   final String textlabel;
   final String hintText;
   final IconData icon;
+  final String? Function(String?) validator;
   final TextEditingController controller;
   const CustomTextForm({
     super.key,
@@ -11,6 +12,7 @@ class CustomTextForm extends StatelessWidget {
     required this.hintText,
     required this.icon,
     required this.controller,
+    required this.validator,
   });
 
   @override
@@ -18,6 +20,7 @@ class CustomTextForm extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: TextFormField(
+        validator: validator,
         controller: controller,
         scrollPadding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
         decoration: InputDecoration(

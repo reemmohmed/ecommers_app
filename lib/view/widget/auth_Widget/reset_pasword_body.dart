@@ -37,6 +37,7 @@ class ResetPaswordBody extends StatelessWidget {
             ),
           ),
           CustomTextForm(
+              validator: (value) {},
               controller: controller.paswored,
               textlabel: 'Password',
               hintText: 'Enter Your Password',
@@ -45,6 +46,7 @@ class ResetPaswordBody extends StatelessWidget {
             height: 10,
           ),
           CustomTextForm(
+              validator: (value) {},
               controller: controller.repaswored,
               textlabel: 'Password',
               hintText: 'Re Enter Your Password',

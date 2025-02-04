@@ -37,6 +37,7 @@ class ResetPaswordBody extends StatelessWidget {
             ),
           ),
           CustomTextForm(
+              isNumber: false,
               validator: (value) {},
               controller: controller.paswored,
               textlabel: 'Password',
@@ -46,6 +47,7 @@ class ResetPaswordBody extends StatelessWidget {
             height: 10,
           ),
           CustomTextForm(
+              isNumber: false,
               validator: (value) {},
               controller: controller.repaswored,
               textlabel: 'Password',

@@ -31,12 +31,14 @@ class ForgetpasswordBody extends StatelessWidget {
           ),
 
           CustomTextForm(
+              isNumber: false,
               validator: (value) {},
               controller: controller.email,
               textlabel: 'Email',
               hintText: 'Enter Your Email',
               icon: Icons.email_outlined),
           CustomTextForm(
+              isNumber: true,
               validator: (value) {},
               controller: controller.phone,
               textlabel: 'phone',

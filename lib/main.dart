@@ -1,5 +1,4 @@
 import 'package:ecommers_app/Services/my_services.dart';
-import 'package:ecommers_app/Test/test.dart';
 import 'package:ecommers_app/core/constant/app_Routs/routs.dart';
 import 'package:ecommers_app/core/localization/change_locle.dart';
 import 'package:ecommers_app/core/localization/tranzilation.dart';

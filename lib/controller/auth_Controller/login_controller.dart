@@ -18,13 +18,13 @@ class LogenControllerImpl extends LoginControllers {
 
   @override
   gotoSignUp() {
-    Get.toNamed(NameRouts.signUp);
+    Get.offNamed(NameRouts.signUp);
   }
 
   @override
   logen() {
-    var data = formKey.currentState;
-    if (data!.validate()) {
+    var formdata = formKey.currentState;
+    if (formdata!.validate()) {
       log(' valed');
     } else {
       log('not  valed');

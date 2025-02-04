@@ -8,6 +8,6 @@ abstract class SucsessSignupController extends GetxController {
 class SucsessSignupControllerImple extends SucsessSignupController {
   @override
   goToLongin() {
-    Get.offAllNamed(NameRouts.logen);
+    Get.offNamed(NameRouts.logen);
   }
 }

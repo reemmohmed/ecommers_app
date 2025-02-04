@@ -8,6 +8,6 @@ abstract class SucsessresetpawswordContoller extends GetxController {
 class SucsessresetpawswordContollerImple extends SucsessresetpawswordContoller {
   @override
   goToLongin() {
-    Get.offAllNamed(NameRouts.logen);
+    Get.offNamed(NameRouts.logen);
   }
 }

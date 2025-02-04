@@ -3,8 +3,8 @@ import 'package:ecommers_app/Test/test.dart';
 import 'package:ecommers_app/core/constant/app_Routs/routs.dart';
 import 'package:ecommers_app/core/localization/change_locle.dart';
 import 'package:ecommers_app/core/localization/tranzilation.dart';
+import 'package:ecommers_app/my_binding.dart';
 import 'package:ecommers_app/view/screen/language.dart';
-import 'package:ecommers_app/view/screen/On_bording/on_boarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,6 +21,7 @@ class EcommerseApp extends StatelessWidget {
   Widget build(BuildContext context) {
     ChangeLocle controller = Get.put(ChangeLocle());
     return GetMaterialApp(
+      initialBinding: MyBinding(),
       theme: controller.appthem,
       locale: controller.language,
       translations: Tranzilation(),

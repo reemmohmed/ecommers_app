@@ -21,8 +21,8 @@ class SignUpControllerImple extends SignUpController {
 
   @override
   signUp() {
-    var data = formKey.currentState;
-    if (data!.validate()) {
+    if (formKey.currentState!.validate()) {
+      Get.offNamed(NameRouts.veryfiycodesignup);
       return 'success';
     } else {
       return 'failers';

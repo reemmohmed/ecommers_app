@@ -15,6 +15,11 @@ class LogenControllerImpl extends LoginControllers {
   late TextEditingController password;
 
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  bool isShowPassword = true;
+  showPassword() {
+    isShowPassword = isShowPassword == true ? false : true;
+    update();
+  }
 
   @override
   gotoSignUp() {

@@ -55,15 +55,21 @@ class LogenBody extends StatelessWidget {
                   textlabel: 'Email',
                   hintText: '13'.tr,
                   icon: Icons.email_outlined),
-              CustomTextForm(
-                  isNumber: false,
-                  validator: (value) {
-                    return validateInput(value!, 5, 9, 'password');
-                  },
-                  controller: controller.password,
-                  textlabel: '  Password',
-                  hintText: '14'.tr,
-                  icon: Icons.lock_clock_outlined),
+              GetBuilder<LogenControllerImpl>(builder: (controller) {
+                return CustomTextForm(
+                    onTapIcon: () {
+                      controller.showPassword();
+                    },
+                    obscureText: controller.isShowPassword,
+                    isNumber: false,
+                    validator: (value) {
+                      return validateInput(value!, 5, 9, 'password');
+                    },
+                    controller: controller.password,
+                    textlabel: '  Password',
+                    hintText: '14'.tr,
+                    icon: Icons.lock_clock_outlined);
+              }),
               const SizedBox(
                 height: 5,
               ),

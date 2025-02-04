@@ -5,17 +5,21 @@ class CustomTextForm extends StatelessWidget {
   final String hintText;
   final IconData icon;
   final bool isNumber;
+  final bool? obscureText;
+  final void Function()? onTapIcon;
 
   final String? Function(String?) validator;
   final TextEditingController controller;
   const CustomTextForm({
     super.key,
     required this.textlabel,
+    this.onTapIcon,
     required this.hintText,
     required this.icon,
     required this.controller,
     required this.validator,
     required this.isNumber,
+    this.obscureText,
   });
 
   @override
@@ -23,6 +27,7 @@ class CustomTextForm extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: TextFormField(
+        obscureText: obscureText == null || obscureText == false ? false : true,
         keyboardType: isNumber
             ? const TextInputType.numberWithOptions(decimal: true)
             : TextInputType.text,
@@ -30,7 +35,7 @@ class CustomTextForm extends StatelessWidget {
         controller: controller,
         scrollPadding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
         decoration: InputDecoration(
-            suffixIcon: Icon(icon),
+            suffixIcon: GestureDetector(onTap: onTapIcon, child: Icon(icon)),
             labelStyle: const TextStyle(
                 color: Colors.black, fontWeight: FontWeight.w500),
             label: Padding(

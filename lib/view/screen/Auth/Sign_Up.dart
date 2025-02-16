@@ -14,7 +14,7 @@ class SignUp extends StatelessWidget {
         elevation: 0,
         title: Text(
           '18'.tr,
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
       body: const SignUpBody(),

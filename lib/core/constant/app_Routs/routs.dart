@@ -1,4 +1,5 @@
 import 'package:ecommers_app/core/constant/app_Routs/name_routs.dart';
+import 'package:ecommers_app/core/middleware/my_middle_war.dart';
 import 'package:ecommers_app/view/screen/Auth/Sign_Up.dart';
 import 'package:ecommers_app/view/screen/Auth/ForgetPasword/foreget_password.dart';
 import 'package:ecommers_app/view/screen/Auth/cheek_email.dart';
@@ -9,20 +10,43 @@ import 'package:ecommers_app/view/screen/Auth/ForgetPasword/sucses_reset_pasword
 import 'package:ecommers_app/view/screen/Auth/ForgetPasword/viry_fiy_code.dart';
 import 'package:ecommers_app/view/screen/Auth/veryfiy_code_signup.dart';
 import 'package:ecommers_app/view/screen/On_bording/on_boarding.dart';
-import 'package:flutter/material.dart';
+import 'package:ecommers_app/view/screen/language.dart';
+import 'package:get/get_navigation/src/routes/get_route.dart';
 
-Map<String, Widget Function(BuildContext)> routes = {
-  //Auth
-  NameRouts.logen: (context) => const Logen(),
-  NameRouts.signUp: (context) => const SignUp(),
-  NameRouts.forgetpasswored: (context) => const ForgetPassword(),
-  NameRouts.viryFiyCode: (context) => const ViryFiyCode(),
-  NameRouts.reseetPassword: (context) => const ReseetPassword(),
-  NameRouts.succesResetPasword: (context) => const SucsesResetPasword(),
-  NameRouts.succsesSignUp: (context) => const SuccsesSignUp(),
-  NameRouts.cheekEmail: (context) => const CheekEmail(),
-  NameRouts.veryfiycodesignup: (context) => const VeryfiyCodeSignup(),
+List<GetPage<dynamic>>? routes = [
+  GetPage(name: "/", page: () => const Language(), middlewares: [
+    // تتخطي الاجزاء الاولي لو فتح التطبيق ملرة تانية
+    MyMiddleWar(),
+  ]),
+  GetPage(name: NameRouts.logen, page: () => const Logen()),
+  GetPage(name: NameRouts.signUp, page: () => const SignUp()),
+  GetPage(name: NameRouts.forgetpasswored, page: () => const ForgetPassword()),
+  GetPage(name: NameRouts.viryFiyCode, page: () => const ViryFiyCode()),
+  GetPage(name: NameRouts.reseetPassword, page: () => const ReseetPassword()),
+  GetPage(
+      name: NameRouts.succesResetPasword,
+      page: () => const SucsesResetPasword()),
+  GetPage(name: NameRouts.succsesSignUp, page: () => const SuccsesSignUp()),
+  GetPage(name: NameRouts.cheekEmail, page: () => const CheekEmail()),
+  GetPage(
+      name: NameRouts.veryfiycodesignup, page: () => const VeryfiyCodeSignup()),
+  GetPage(name: NameRouts.onboarding, page: () => const OnBoarding()),
+];
 
-// Onbording
-  NameRouts.onboarding: (context) => const OnBoarding(),
-};
+// Map<String, Widget Function(BuildContext)> routes = {
+//   //Auth
+//   // NameRouts.logen: (context) => const Logen(),
+//   // NameRouts.signUp: (context) => const SignUp(),
+//   // NameRouts.forgetpasswored: (context) => const ForgetPassword()
+//   // NameRouts.viryFiyCode: (context) => const ViryFiyCode(),
+//   // NameRouts.reseetPassword: (context) => const ReseetPassword(),
+//   // NameRouts.succesResetPasword: (context) => const SucsesResetPasword(),
+
+//   // NameRouts.succsesSignUp: (context) => const SuccsesSignUp(),
+
+//   // NameRouts.cheekEmail: (context) => const CheekEmail(),
+//   NameRouts.veryfiycodesignup: (context) => const VeryfiyCodeSignup(),
+
+// // Onbording
+//   NameRouts.onboarding: (context) => const OnBoarding(),
+// };

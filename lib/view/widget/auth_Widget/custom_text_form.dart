@@ -35,7 +35,10 @@ class CustomTextForm extends StatelessWidget {
         controller: controller,
         scrollPadding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
         decoration: InputDecoration(
-            suffixIcon: GestureDetector(onTap: onTapIcon, child: Icon(icon)),
+            suffixIcon: InkWell(
+                borderRadius: BorderRadius.circular(20),
+                onTap: onTapIcon,
+                child: Icon(icon)),
             labelStyle: const TextStyle(
                 color: Colors.black, fontWeight: FontWeight.w500),
             label: Padding(

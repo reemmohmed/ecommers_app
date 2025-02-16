@@ -3,7 +3,6 @@ import 'package:ecommers_app/core/constant/app_Routs/routs.dart';
 import 'package:ecommers_app/core/localization/change_locle.dart';
 import 'package:ecommers_app/core/localization/tranzilation.dart';
 import 'package:ecommers_app/my_binding.dart';
-import 'package:ecommers_app/view/screen/language.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -25,10 +24,7 @@ class EcommerseApp extends StatelessWidget {
       locale: controller.language,
       translations: Tranzilation(),
       debugShowCheckedModeBanner: false,
-      home:
-          // const Test(),
-          const Language(),
-      routes: routes,
+      getPages: routes,
     );
   }
 }

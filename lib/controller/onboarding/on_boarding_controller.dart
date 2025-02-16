@@ -1,10 +1,8 @@
+import 'package:ecommers_app/Services/my_services.dart';
 import 'package:ecommers_app/core/constant/app_Routs/name_routs.dart';
-import 'package:ecommers_app/core/constant/app_Routs/routs.dart';
 import 'package:ecommers_app/data/sourse_data/Static/static.dart';
-import 'package:ecommers_app/view/screen/Auth/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 
 abstract class OnBoardingController extends GetxController {
   nex();
@@ -14,13 +12,14 @@ abstract class OnBoardingController extends GetxController {
 class OnboardingControllerImplement extends OnBoardingController {
   int currentpage = 0;
   late PageController pageController = PageController();
-
+  MyServices myServices = Get.find();
   @override
   nex() {
-    if (currentpage < Static.onboardingList.length - 1) {
+    currentpage++;
+    if (currentpage > Static.onboardingList.length - 1) {
+      myServices.sharedPreferences.setString('onboardng', '1');
       Get.offAllNamed(NameRouts.logen);
     } else {
-      currentpage++;
       pageController.animateToPage(currentpage,
           duration: const Duration(microseconds: 100), curve: Curves.easeInOut);
     }
